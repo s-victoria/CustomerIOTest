@@ -1,0 +1,37 @@
+New log file opened at Tue Jan 10 10:39:22 IST 2017 by 4932@DESKTOP-IKSVL5L
+Taking next connection to: 50959
+New client attempting to connect on port: 50960-50959
+  Address = /192.168.1.102:50959
+This client on port 50960 has uuid 08034cb6-1d14-4990-97c4-44ece3ad845e configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-08034cb6-1d14-4990-97c4-44ece3ad845e
+Taking next connection to: 50959
+New client attempting to connect on port: 50961-50959
+  Address = /192.168.1.102:50959
+Handshake exception on socket: 50961
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at java.io.DataInputStream.readInt(Unknown Source)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 50959
+New client attempting to connect on port: 50962-50959
+  Address = /192.168.1.102:50959
+This client on port 50962 has uuid 5ada6d81-4432-42ab-91f6-38ec8500eb64 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-08034cb6-1d14-4990-97c4-44ece3ad845e, activator-5ada6d81-4432-42ab-91f6-38ec8500eb64
+Taking next connection to: 50959
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
+Closing the 4932@DESKTOP-IKSVL5L logs at Tue Jan 10 10:42:22 IST 2017, goodbye.
