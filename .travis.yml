@@ -1,4 +1,4 @@
-language: scala
+language: java
 scala:
 - 2.11.8
 jdk:
@@ -11,4 +11,4 @@ before_script:
 - unzip -qo typesafe-activator-${ACTIVATOR_VERSION}-minimal.zip
 script:
 - activator-${ACTIVATOR_VERSION}-minimal/activator clean compile
-- activator-${ACTIVATOR_VERSION}-minimal/activator run
+- activator-${ACTIVATOR_VERSION}-minimal/activator test
