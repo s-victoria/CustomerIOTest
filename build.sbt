@@ -9,7 +9,6 @@ scalaVersion := "2.11.7"
 libraryDependencies ++= Seq(
   javaJdbc,
   cache,
-  javaWs
+  javaWs,
+ "io.swagger" %% "swagger-play2" % "1.5.3"
 )
-
-
