@@ -16,4 +16,9 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 GET		/getData					controllers.GetClientDataController.getData
 
 # Swagger resource listing
+GET 	/ 							controllers.Assets.at(path="/public", file="index.html")
 GET     /swagger.json           	controllers.ApiHelpController.getResources
+GET 	/api-getData 				controllers.ApiHelpController.getResource(path = "/api-getData") 
+
+#Swagger UI
+GET     /docs/swagger-ui/*file      controllers.Assets.at(path:String="/public/lib/swagger-ui", file:String)
